@@ -23,7 +23,7 @@ export class AppComponent {
     },
     {
       title: 'Grupos',
-      url: '/Grupos',
+      url: '/grupos',
       icon: 'chatbubbles'
     },
     {
