@@ -30,6 +30,11 @@ export class AppComponent {
       title: 'Instalação',
       url: '/instalacao',
       icon: 'home'
+    },
+    {
+      title: 'Layout',
+      url: '/layout',
+      icon: 'construct'
     }
   ];
 

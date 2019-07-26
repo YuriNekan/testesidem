@@ -19,7 +19,9 @@ const routes: Routes = [
     path: 'instalacao',
     loadChildren: './instalacao/instalacao.module#InstalacaoPageModule' 
   },
-  { path: 'grupos', loadChildren: './grupos/grupos.module#GruposPageModule' }
+  { path: 'grupos', loadChildren: './grupos/grupos.module#GruposPageModule' },
+  { path: 'layout', loadChildren: './layout/layout.module#LayoutPageModule' },
+  { path: 'lay-header-footer', loadChildren: './lay-header-footer/lay-header-footer.module#LayHeaderFooterPageModule' }
 ];
 
 @NgModule({
