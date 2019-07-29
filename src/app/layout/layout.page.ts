@@ -13,19 +13,19 @@ export class LayoutPage implements OnInit {
   ngOnInit() {
   }
 
-    openlHeaderFooter(){
-    this.navCtrl.navigateForward("layHeaderFooter")
+    openlHeaderFooter() {
+    this.navCtrl.navigateForward('lay-header-footer');
   }
 
-    openlTabs(){
-
+    openlTabs() {
+    this.navCtrl.navigateForward('laytabs');
   }
 
-    openlMenu(){
-
+    openlMenu() {
+    this.navCtrl.navigateForward('laymenu');
   }
 
-    openlSplit(){
-
+    openlSplit() {
+    this.navCtrl.navigateForward('laysplit');
   }
 }
