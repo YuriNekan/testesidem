@@ -42,6 +42,18 @@ const routes: Routes = [
   {
     path: 'laysplit',
     loadChildren: './laysplit/laysplit.module#LaysplitPageModule'
+  },
+  {
+    path: 'tabs',
+    loadChildren: './pages/tabs/tabs.module#TabsPageModule'
+  },
+  {
+    path: 'tab1',
+    loadChildren: './laytabs/tab1/tab1.module#Tab1PageModule'
+  },
+  {
+    path: 'tab2',
+    loadChildren: './laytabs/tab2/tab2.module#Tab2PageModule'
   }
 
 ];

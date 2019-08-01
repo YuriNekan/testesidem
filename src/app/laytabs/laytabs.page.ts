@@ -12,4 +12,7 @@ export class LaytabsPage implements OnInit {
   ngOnInit() {
   }
 
+  tab2selected() {
+    console.log('Test');
+  }
 }
