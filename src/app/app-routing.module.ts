@@ -54,7 +54,12 @@ const routes: Routes = [
   {
     path: 'tab2',
     loadChildren: './laytabs/tab2/tab2.module#Tab2PageModule'
-  }
+  },
+  {
+    path: 'laygrid',
+    loadChildren: './laygrid/laygrid.module#LaygridPageModule'
+  },
+  { path: 'api-externa', loadChildren: './api-externa/api-externa.module#ApiExternaPageModule' }
 
 ];
 

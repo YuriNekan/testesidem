@@ -27,5 +27,8 @@ export class LayoutPage implements OnInit {
 
     openlSplit() {
     this.navCtrl.navigateForward('laysplit');
-  }
+    }
+    openlGrid() {
+      this.navCtrl.navigateForward('laygrid');
+    }
 }

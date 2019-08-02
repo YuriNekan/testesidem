@@ -35,6 +35,11 @@ export class AppComponent {
       title: 'Layout',
       url: '/layout',
       icon: 'construct'
+    },
+    {
+     title: 'Api Externa',
+     url: '/api-externa',
+     icon: 'arrow-dropright'
     }
   ];
 
