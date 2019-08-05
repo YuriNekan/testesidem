@@ -40,6 +40,11 @@ export class AppComponent {
      title: 'Api Externa',
      url: '/api-externa',
      icon: 'arrow-dropright'
+    },
+    {
+      title: 'Configurações',
+      url: '/config',
+      icon: 'cog'
     }
   ];
 
