@@ -59,13 +59,17 @@ const routes: Routes = [
     path: 'laygrid',
     loadChildren: './laygrid/laygrid.module#LaygridPageModule'
   },
-  { 
+  {
     path: 'api-externa',
     loadChildren: './api-externa/api-externa.module#ApiExternaPageModule'
 },
   {
     path: 'config',
     loadChildren: './config/config.module#ConfigPageModule'
+},
+  {
+    path: 'fab',
+    loadChildren: './fab/fab.module#FabPageModule'
 }
 
 ];
