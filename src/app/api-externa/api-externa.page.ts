@@ -14,21 +14,21 @@ export class ApiExternaPage implements OnInit {
   }
 
   get() {
-    alert('get');
+    console.log('get');
   }
 
   post() {
-    alert('post');
+    console.log('post');
 
   }
 
   put() {
-    alert('put');
+    console.log('put');
 
   }
 
   delete() {
-    alert('delete');
+    console.log('delete');
 
   }
 }

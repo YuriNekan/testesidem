@@ -8,5 +8,9 @@ export class UsuarioService {
 
   constructor(private http: HttpClient) { }
 
-  obterUsuarioPor(id: number) {}
+  obterUsuarioPor(id: number) {
+    let url = 'http://localhost:8100/home';
+
+    return this.http.get(url).toPromise();
+  }
 }

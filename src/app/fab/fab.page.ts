@@ -10,7 +10,12 @@ export class FabPage implements OnInit {
   constructor(
     private alertCtrl: AlertController,
     private toastCtrl: ToastController,
-    private actionSheetCtrl: ActionSheetController) { }
+    private actionSheetCtrl: ActionSheetController) {
+      let tasksJson = localStorage.getItem('tasksDB');
+      if (tasksJson != null) {
+        this.tasks = JSON.parse(tasksJson);
+      }
+     }
 
   tasks: any = [];
 
@@ -60,6 +65,8 @@ export class FabPage implements OnInit {
     // tslint:disable-next-line:prefer-const
     let task = {name: tasktodo, done: false};
     this.tasks.push(task);
+    this.updateLocalStorage();
+
   }
 
   async openActions(task: any) {
@@ -69,7 +76,7 @@ export class FabPage implements OnInit {
         icon: task.done ? '' : '',
         handler: () => {
           task.done = !task.done;
-          // this.updateLocalStorage();
+          this.updateLocalStorage();
         }
       },
       {
@@ -82,5 +89,13 @@ export class FabPage implements OnInit {
       }]
     });
     await actionSheet.present();
+  }
+  updateLocalStorage() {
+    localStorage.setItem('tasksDB', JSON.stringify(this.tasks));
+  }
+  delete(task: any) {
+    this.tasks = this.tasks.filter(taskArray => task !== taskArray);
+
+    this.updateLocalStorage();
   }
 }
