@@ -11,9 +11,10 @@
   <ion-button expand="block"(click)="post()"><ion-icon slot="start" name="cloud-upload"></ion-icon>POST - Enviar dados p/ o serv.</ion-button>
   <ion-button expand="block"(click)="put()"><ion-icon slot="start" name="refresh-circle"></ion-icon>PUT - Atualizar dados do servi.</ion-button>
   <ion-button expand="block"(click)="delete()"><ion-icon slot="start" name="flame"></ion-icon>DELETE - Exclui dados do serv.</ion-button>
-  
+  <ion-button expand="block"(click)="cep()"><ion-icon slot="start" name="flame"></ion-icon>Consultar CEP</ion-button>
   
   <h4>Resposta do servidor:</h4>
-  {{result}}
+  {{result}} <br>
+  {{bairro}}
 </ion-content>
   

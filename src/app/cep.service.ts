@@ -4,13 +4,15 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class UsuarioService {
+export class CepService {
 
   constructor(private http: HttpClient) { }
 
-  obterUsuarioPor(id: number) {
-    const url = 'http://localhost:8100/home';
+
+  obterEndereço(cep: number) {
+    const url = 'https://viacep.com.br/ws/' + cep + '/json/';
 
     return this.http.get(url).toPromise();
   }
+
 }

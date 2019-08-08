@@ -71,7 +71,6 @@ const routes: Routes = [
     path: 'fab',
     loadChildren: './fab/fab.module#FabPageModule'
 }
-
 ];
 
 @NgModule({
