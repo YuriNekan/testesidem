@@ -7,14 +7,21 @@
 
 <ion-content class="ion-padding">
 
-  <ion-button expand="block"(click)="get()"><ion-icon slot="start" name="cloud-download"></ion-icon>GET - Receber dados do serv.</ion-button>
-  <ion-button expand="block"(click)="post()"><ion-icon slot="start" name="cloud-upload"></ion-icon>POST - Enviar dados p/ o serv.</ion-button>
-  <ion-button expand="block"(click)="put()"><ion-icon slot="start" name="refresh-circle"></ion-icon>PUT - Atualizar dados do servi.</ion-button>
-  <ion-button expand="block"(click)="delete()"><ion-icon slot="start" name="flame"></ion-icon>DELETE - Exclui dados do serv.</ion-button>
-  <ion-button expand="block"(click)="cep()"><ion-icon slot="start" name="flame"></ion-icon>Consultar CEP</ion-button>
-  
-  <h4>Resposta do servidor:</h4>
+  <ion-button expand="block"(click)="get()" fill="outline"><ion-icon slot="start" name="cloud-download"></ion-icon>GET - Receber dados do serv.</ion-button>
+  <ion-button expand="block"(click)="post()" fill="outline"><ion-icon slot="start" name="cloud-upload"></ion-icon>POST - Enviar dados p/ o serv.</ion-button>
+  <ion-button expand="block"(click)="put()" fill="outline"><ion-icon slot="start" name="refresh-circle"></ion-icon>PUT - Atualizar dados do servi.</ion-button>
+  <ion-button expand="block"(click)="delete()" fill="outline"><ion-icon slot="start" name="flame"></ion-icon>DELETE - Exclui dados do serv.</ion-button>
+  <ion-item lines="none">
+  <ion-label>CEP: </ion-label>
+  <ion-input type="number" [(ngModel)]="numeroDoCep" placeholder="50000123" (keyup.enter)='cep()'></ion-input>  
+  </ion-item>
+  <ion-button (click)="cep()" expand="full" shape="" [disabled]="!numeroDoCep"><ion-icon slot="end" name="airplane"></ion-icon>Consultar</ion-button> <br>
+
+
   {{result}} <br>
   {{bairro}}
+  {{complemento}} <br>
+  {{localidade}} <br>
+  {{uf}}
+
 </ion-content>
-  

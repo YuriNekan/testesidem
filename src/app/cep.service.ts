@@ -9,7 +9,7 @@ export class CepService {
   constructor(private http: HttpClient) { }
 
 
-  obterEndereço(cep: number) {
+  obterEndereço(cep: string) {
     const url = 'https://viacep.com.br/ws/' + cep + '/json/';
 
     return this.http.get(url).toPromise();
