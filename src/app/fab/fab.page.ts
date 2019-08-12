@@ -11,7 +11,7 @@ export class FabPage implements OnInit {
     private alertCtrl: AlertController,
     private toastCtrl: ToastController,
     private actionSheetCtrl: ActionSheetController) {
-      let tasksJson = localStorage.getItem('tasksDB');
+      const tasksJson = localStorage.getItem('tasksDB');
       if (tasksJson != null) {
         this.tasks = JSON.parse(tasksJson);
       }

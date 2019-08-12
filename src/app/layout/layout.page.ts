@@ -31,8 +31,13 @@ export class LayoutPage implements OnInit {
   openlGrid() {
     this.navCtrl.navigateForward('laygrid');
   }
+
   openlFab() {
     this.navCtrl.navigateForward('fab');
+  }
+
+  openlCss() {
+    this.navCtrl.navigateForward('css');
   }
 
 }

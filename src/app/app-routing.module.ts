@@ -70,7 +70,11 @@ const routes: Routes = [
   {
     path: 'fab',
     loadChildren: './fab/fab.module#FabPageModule'
-}
+},
+  { path: 'css',
+  loadChildren: './css/css.module#CssPageModule'
+  }
+
 ];
 
 @NgModule({
